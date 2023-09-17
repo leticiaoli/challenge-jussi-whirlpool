@@ -1,7 +1,10 @@
 import React from "react";
+import FullWidthStaticBanner from "../components/FullWidthStaticBanner";
 
 const Home = () => {
-  return <h1>Página Home</h1>;
+  return (
+    <FullWidthStaticBanner />
+  )
 };
 
 export default Home;
