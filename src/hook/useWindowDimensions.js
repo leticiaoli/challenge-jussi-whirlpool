@@ -16,11 +16,11 @@ export default function useWindowDimensions() {
     getWindowDimensions()
   )
 
-  function handleResize() {
-    setWindowDimensions(getWindowDimensions())
-  }
+  // function handleResize() {
+  //   setWindowDimensions(getWindowDimensions())
+  // }
 
-  window.addEventListener('resize', handleResize)
+  // window.addEventListener('resize', handleResize)
 
   return windowDimensions
 }
