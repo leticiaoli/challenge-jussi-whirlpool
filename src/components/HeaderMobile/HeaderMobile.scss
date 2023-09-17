@@ -1,0 +1,28 @@
+@import "../../scss/variables.scss";
+
+.containerFull.headerMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 $gutter;
+  box-sizing: border-box;
+
+  .containerCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+  }
+}
+
+.headerMobile {
+  &__logo {
+    width: 136px;
+    height: 32px;
+  }
+
+  &__cart{
+    padding-left: $gutter;
+  }
+}
