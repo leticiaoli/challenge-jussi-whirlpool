@@ -1,0 +1,59 @@
+@import "../../scss/variables.scss";
+
+.containerFull.navMobile {
+  height: 100%;
+}
+
+.navMobile {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: $grey-jussi;
+  transition: all ease-out .5s;
+
+  &.show{
+    left: 0;
+    transition: all ease-out .5s;
+  }
+
+  &__crossIcon {
+    padding-top: $gutter;
+    padding-left: $gutter;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-list {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    &-listItem {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 400;
+
+      &-login {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        background: $green-jussi;
+      }
+    }
+
+    &-listText {
+      display: block;
+      padding: $gutter;
+      color: #000;
+    }
+  }
+}
