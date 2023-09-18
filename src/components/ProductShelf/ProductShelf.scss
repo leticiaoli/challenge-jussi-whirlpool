@@ -1,0 +1,38 @@
+@import "../../scss/variables.scss";
+
+.containerFull.productShelf{
+  padding: ($gutter * 3.5) $gutter;
+  box-sizing: border-box;
+}
+
+.productShelf{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .containerCenter{
+    max-width: 1024px;
+  }
+
+  &__title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-bars{
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $green-jussi;
+    }
+
+    &-text{
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #000;
+      margin-left: 4px;
+     margin-bottom: ($gutter * 1.5);
+    }
+  }
+}

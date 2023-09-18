@@ -1,0 +1,93 @@
+@import "../../../scss/variables.scss";
+
+.listShelf {
+  display: block;
+ 
+  &__shelf{
+    width: 241px!important;
+    border-radius: 4px;
+    border: 1px solid $grey-jussi;
+    background: #fff;
+    padding: $gutter;
+    box-sizing: border-box;
+    margin: 0 calc(50% - 120px);
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    padding-top: $gutter;
+  }
+
+  &__text {
+    padding-top: ($gutter * 3.5);
+
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    &-description {
+      padding: $gutter 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: $pink-jussi;
+    }
+
+    &-list {
+      list-style: disc;
+      font-size: 12px;
+      font-weight: 500;
+      color: #5b5b5b;
+      line-height: 18px;
+      padding-left: 12px;
+      padding-bottom: $gutter;
+    }
+    
+    &-listItem{
+      padding-left: 0;
+      margin-left: 0;
+     }
+
+  }
+
+  &__button {
+    display: flex;
+    padding: 12px 56px 12px 63px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: $green-jussi;
+    background: $green-jussi;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+  }
+
+  .slick{
+
+    &-arrow{
+      width: auto;
+      height: auto;
+      position: absolute;
+    }
+
+    &-prev{
+      left: $gutter;
+      z-index: 2;
+      &::before{
+        font-size: 30px;
+        color: #000;
+      }
+    }
+    &-next{
+      right: $gutter;
+      &::before{
+        font-size: 30px;
+        color: #000;
+      }
+    }
+  }
+}
