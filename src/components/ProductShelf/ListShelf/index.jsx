@@ -48,7 +48,7 @@ const ListShelf = () => {
           <li className="listShelf__shelf">
             <img src={product.image} className="listShelf__image" />
             <div className="listShelf__text">
-              <h2 className="listShelf__text-title">{product?.name}</h2>
+              <h3 className="listShelf__text-title">{product?.name}</h3>
               <p className="listShelf__text-description">{product?.description}</p>
               <ul className="listShelf__text-list">
                 {product?.productSpecifications?.map((productSpecification) => (
