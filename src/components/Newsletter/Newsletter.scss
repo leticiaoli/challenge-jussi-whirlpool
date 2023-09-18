@@ -1,0 +1,67 @@
+@import "../../scss/variables.scss";
+
+.containerFull.newsletter{
+  padding: ($gutter * 8.5) 0;
+  background: #000;
+  box-sizing: border-box;
+}
+
+.newsletter{
+
+  .containerCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-bottom: ($gutter * 1.5);
+  }
+
+  &__boxInput{
+    width: 100%;
+    max-width: 502px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $green-jussi;
+
+    &-input{
+      max-width: 320px;
+      height: auto;
+      background: transparent;
+      border: none;
+      color: #fff;
+
+      &::placeholder{
+        font-family: "Barlow";
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      &:focus-visible{
+        outline: none;
+      }
+    }
+
+    &-button{
+      font-family: "Barlow";
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $green-jussi;
+      background: transparent;
+      border: none;
+    }
+  }
+}
