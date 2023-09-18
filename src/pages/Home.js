@@ -4,6 +4,7 @@ import BrandBar from "../components/BrandBar";
 import ProductShelf from "../components/ProductShelf";
 import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <BrandBar />
       <ProductShelf />
       <AboutUs />
-      <Contact /> 
+      <Contact />
+      <Newsletter />
     </>
   );
 };
