@@ -52,6 +52,7 @@
       align-items: center;
       border-radius: 6px;
       border: 1px solid #000;
+      background: #fff;
     }
   }
 
@@ -98,6 +99,10 @@
 
     &__contentleft {
       width: 100%;
+
+      &-button{
+        background: transparent;
+      }
     }
 
     &__contentRight {

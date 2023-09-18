@@ -3,6 +3,7 @@ import FullWidthStaticBanner from "../components/FullWidthStaticBanner";
 import BrandBar from "../components/BrandBar";
 import ProductShelf from "../components/ProductShelf";
 import AboutUs from "../components/AboutUs";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <FullWidthStaticBanner />
       <BrandBar />
       <ProductShelf />
-      <AboutUs /> 
+      <AboutUs />
+      <Contact /> 
     </>
   );
 };
