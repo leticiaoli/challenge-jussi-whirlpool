@@ -1,0 +1,71 @@
+@import "../../scss/variables.scss";
+
+.containerFull.brandBar {
+  background: $grey-jussi;
+}
+
+.brandBar {
+  width: 100%;
+
+  .containerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__arrow {
+    padding: 0 ($gutter * 3);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-itemImg {
+      padding-right: ($gutter * 3);
+    }
+  }
+}
+
+.brandBar__list-itemImg.fourImg{
+  padding-right: 0;
+}
+
+
+@media (max-width: 1023px) {
+  .brandBar {
+    .containerCenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .brandBar {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &-itemImg {
+        padding-right: ($gutter * 2);
+        margin-top: ($gutter - 8);
+      }
+    }
+  }
+}
