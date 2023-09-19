@@ -1,0 +1,26 @@
+@import "../../scss/variables.scss";
+
+.containerFull.footer {
+  background-color: #000;
+}
+
+.footer {
+  .containerCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+  }
+
+  &__listSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item {
+      &:nth-of-type(2) {
+        padding: 0 $gutter;
+      }
+    }
+  }
+}

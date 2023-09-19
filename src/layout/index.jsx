@@ -2,6 +2,7 @@ import React from "react";
 import HeaderDesktop from "../components/HeaderDesktop";
 import HeaderMobile from "../components/HeaderMobile";
 import useWindowDimensions from "../hook/useWindowDimensions";
+import Footer from "../components/Footer";
 
 import "../scss/global.scss";
 
@@ -12,7 +13,7 @@ const Layout = ({ children }) => {
     <>
       {isMobile ? <HeaderMobile /> : <HeaderDesktop />}
       {children}
-      <footer>footer</footer>
+      <Footer />
     </>
   );
 };
