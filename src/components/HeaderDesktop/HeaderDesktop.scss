@@ -58,8 +58,8 @@
       height: 40px;
       flex-shrink: 0;
       border-radius: 24px;
-      border: 1px solid var(--grey, #f2f2f2);
-      background: var(--white, #fff);
+      border: 1px solid $grey-jussi;
+      background: #fff;
       display: flex;
       align-items: center;
     }
@@ -82,11 +82,16 @@
       color: $pink-jussi;
     }
 
+    &-searchBtn{
+      border: none;
+      background: transparent;
+      cursor: pointer;
 
-    &-searchBtn {
-      width: 24px;
-      height: 24px;
-      margin-right: $gutter;
+      &Image {
+        width: 24px;
+        height: 24px;
+        margin-right: $gutter;
+      }
     }
 
     &-loginLink {
