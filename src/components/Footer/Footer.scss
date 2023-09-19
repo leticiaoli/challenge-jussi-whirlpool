@@ -10,6 +10,8 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1024px;
+    padding: 0 $gutter;
+    box-sizing: border-box;
   }
 
   &__listSocial {
@@ -21,6 +23,14 @@
       &:nth-of-type(2) {
         padding: 0 $gutter;
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    .containerCenter {
+      padding: 0;
     }
   }
 }
