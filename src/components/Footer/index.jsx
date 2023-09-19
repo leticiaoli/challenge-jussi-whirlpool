@@ -13,27 +13,27 @@ const Footer = () => {
         />
         <ul className="footer__listSocial">
           <li className="footer__listSocial-item">
-            <a href="https://www.facebook.com/agencia.jussi/?locale=pt_BR" target="_blank" className="footer__listSocial-link">
+            <a href="https://www.facebook.com/agencia.jussi/?locale=pt_BR" target="_blank" rel="noopener noreferrer" className="footer__listSocial-link">
               <img
-                src="/facebook.png"
+                src="/facebook.svg"
                 alt="Imagem do logo do facebook"
                 className="footer__listSocial-img"
               />
             </a>
           </li>
           <li className="footer__listSocial-item">
-            <a href="https://www.instagram.com/jussi/" target="_blank" className="footer__listSocial-link">
+            <a href="https://www.instagram.com/jussi/" target="_blank" rel="noopener noreferrer" className="footer__listSocial-link">
               <img
-                src="/instagram.png"
+                src="/instagram.svg"
                 alt="Imagem do logo do instagram"
                 className="footer__listSocial-img"
               />
             </a>
           </li>
           <li className="footer__listSocial-item">
-            <a href="https://www.linkedin.com/company/agencia-jussi/" target="_blank" className="footer__listSocial-link">
+            <a href="https://www.linkedin.com/company/agencia-jussi/" target="_blank" rel="noopener noreferrer" className="footer__listSocial-link">
               <img
-                src="/linkedin.png"
+                src="/linkedin.svg"
                 alt="Imagem do logo do linkedin"
                 className="footer__listSocial-img"
               />

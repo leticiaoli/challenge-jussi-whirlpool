@@ -44,16 +44,15 @@ const ListShelf = () => {
 
     <ul className="listShelf">
       <Slider {...settings}>
-        {productMock?.map((product) => (
-          <li className="listShelf__shelf">
-            <img src={product.image} className="listShelf__image" />
+        {productMock?.map((product, i) => (
+          <li className="listShelf__shelf" key={`product-${i}`}>
+            <img src={product.image} className="listShelf__image" alt={`imagem do produto ${product?.name}`}/>
             <div className="listShelf__text">
               <h3 className="listShelf__text-title">{product?.name}</h3>
               <p className="listShelf__text-description">{product?.description}</p>
               <ul className="listShelf__text-list">
-                {product?.productSpecifications?.map((productSpecification) => (
-
-                  <li className="listShelf__text-listItem">{productSpecification?.specification}</li>
+                {product?.productSpecifications?.map((productSpecification, index) => (
+                  <li key={`specification-${i}-${index}`} className="listShelf__text-listItem">{productSpecification?.specification}</li>
                 ))}
               </ul>
             </div>
