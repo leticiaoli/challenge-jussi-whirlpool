@@ -1,6 +1,6 @@
 import React from "react";
 import "./ListShelf.scss";
-import productMook from "./../../../mook/productMook.json";
+import productMock from "./../../../mock/productMock.json";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -44,7 +44,7 @@ const ListShelf = () => {
 
     <ul className="listShelf">
       <Slider {...settings}>
-        {productMook?.map((product) => (
+        {productMock?.map((product) => (
           <li className="listShelf__shelf">
             <img src={product.image} className="listShelf__image" />
             <div className="listShelf__text">
