@@ -1,4 +1,3 @@
-import "./App.scss";
 import AppRoutes from "./Routes";
 import Layout from "./layout";
 import { MenuProvider } from "./providers/menuProvider";
