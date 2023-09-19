@@ -11,6 +11,7 @@
   left: -100%;
   background: $grey-jussi;
   transition: all ease-out .5s;
+  z-index: 3;
 
   &.show{
     left: 0;
