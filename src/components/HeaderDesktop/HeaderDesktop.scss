@@ -19,6 +19,11 @@
   &__contentLeft {
     display: inline-flex;
 
+    &-logo{
+      width: 184px;
+      height: 40px;
+    }
+
     &-list {
       display: flex;
       justify-content: center;
@@ -34,6 +39,10 @@
       color: black;
       font-size: 16px;
       font-weight: 500;
+
+      &:hover{
+        color: $green-jussi;
+      }
     }
   }
 
@@ -84,6 +93,10 @@
       color: black;
       font-size: 16px;
       font-weight: 500;
+
+      &:hover{
+        color: $green-jussi;
+      }
     }
   }
 }

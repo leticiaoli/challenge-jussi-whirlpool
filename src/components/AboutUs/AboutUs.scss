@@ -1,13 +1,13 @@
 @import "../../scss/variables.scss";
 
 .aboutUs {
-  padding: ($gutter * 4) 0;
   position: relative;
   box-sizing: border-box;
+  padding: ($gutter * 2);
 
   &::before {
     content: "";
-    width: 50%;
+    width: 100%;
     height: 100%;
     position: absolute;
     background: $grey-jussi;
@@ -18,13 +18,12 @@
 
   .containerCenter {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    max-width: 1024px;
   }
 
   &__contentleft {
-    width: 241px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -52,67 +51,53 @@
       align-items: center;
       border-radius: 6px;
       border: 1px solid #000;
-      background: #fff;
+      background: transparent;
     }
   }
 
   &__contentRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
     &-image {
-      width: 676px;
-      height: 520px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
     }
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .aboutUs {
-    padding: 0 $gutter;
-    &__contentleft {
-      width: 200px;
-    }
-
-    &__contentRight {
-      &-image {
-        width: 576px;
-        height: 420px;
-        margin-left: 10px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px){
-
-  .aboutUs {
-    padding-top: ($gutter * 2);
-    padding-bottom: ($gutter * 2);
+    padding: ($gutter * 4) 0;
 
     &::before {
-      width: 100%;
+      width: 50%;
     }
 
     .containerCenter {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: flex-start;
+      flex-direction: row;
+      max-width: 1024px;
     }
 
     &__contentleft {
-      width: 100%;
+      width: 291px;
+      padding-left: $gutter;
 
-      &-button{
-        background: transparent;
+      &-button {
+        background: #fff;
       }
     }
 
     &__contentRight {
-      width: 100%;
-
       &-image {
-        width:100%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 0;
+        width: 676px;
+        height: 520px;
+        margin-left: ($gutter * 3);
       }
     }
   }

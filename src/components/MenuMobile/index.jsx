@@ -11,7 +11,7 @@ const MenuMobile = () => {
       <div className="containerCenter">
         <img
           src="/cross.png"
-          alt="Ícone x de fechar a janela do menu"
+          alt="Imagem do x de fechar a janela do menu"
           className="navMobile__crossIcon"
           onClick={() => setIsOpen(false)}
         />

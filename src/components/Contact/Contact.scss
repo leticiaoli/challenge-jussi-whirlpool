@@ -1,59 +1,26 @@
 @import "../../scss/variables.scss";
 
-.containerFull.contact {
-  background: $pink-jussi;
-  padding: ($gutter * 8.5);
-  box-sizing: border-box;
-}
-
-.contact {
-  .containerCenter {
-    max-width: 676px;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &-paragraph {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 40px;
-      text-transform: uppercase;
-      text-align: center;
-      color: #fff;
-      padding-bottom: ($gutter * 2);
-    }
-
-    &-text{
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      padding: 8px;
-    }
-
-    &-email{
-      font-size: 32px;
-      font-weight: 500;
-      color: #fff;
-    }
-  }
-}
-
-@media (max-width: 768px){
-
   .containerFull.contact {
+    background: $pink-jussi;
     padding: ($gutter * 2.5);
     box-sizing: border-box;
   }
   .contact {
    
     &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     
       &-paragraph {
         font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        padding-bottom: ($gutter * 2);
       }
   
       &-text{
@@ -67,6 +34,33 @@
         font-size: 24px;
         font-weight: 500;
         color: #fff;
+      }
+    }
+  }
+
+@media (min-width: 1024px){
+
+  .containerFull.contact {
+    padding: ($gutter * 8.5);
+  }
+  
+  .contact {
+    .containerCenter {
+      max-width: 676px;
+    }
+  
+    &__content {
+      
+      &-paragraph {
+        font-size: 32px;
+      }
+  
+      &-text{
+        font-size: 16px;
+      }
+  
+      &-email{
+        font-size: 32px;
       }
     }
   }

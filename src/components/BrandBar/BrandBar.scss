@@ -11,7 +11,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
+    flex-direction: column;
+    padding: $gutter 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-itemImg {
+      padding-right: ($gutter * 2);
+      margin-top: ($gutter - 8);
+    }
   }
 
   &__text {
@@ -20,51 +33,38 @@
   }
 
   &__arrow {
-    padding: 0 ($gutter * 3);
-  }
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-itemImg {
-      padding-right: ($gutter * 3);
-    }
+    display: none;
   }
 }
 
-.brandBar__list-itemImg.fourImg {
-  padding-right: 0;
-}
-
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
   .brandBar {
     .containerCenter {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      max-width: 1024px;
+      padding: 0;
     }
 
     &__arrow {
-      display: none;
+      display: block;
+      padding: 0 ($gutter * 3);
     }
-  }
-}
 
-@media (max-width: 768px) {
-  .brandBar {
     &__list {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
 
       &-itemImg {
-        padding-right: ($gutter * 2);
-        margin-top: ($gutter - 8);
+        padding-right: ($gutter * 3);
       }
     }
+  }
+
+  .brandBar__list-itemImg.fourImg {
+    padding-right: 0;
   }
 }

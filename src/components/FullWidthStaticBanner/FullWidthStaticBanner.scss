@@ -8,13 +8,16 @@
 }
 
 .bannerFull {
-
   .containerCenter {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: ($gutter * 3) ($gutter * 10.4);
     box-sizing: border-box;
+  }
+
+  &__contentRight {
+    display: none;
   }
 
   &__contentLeft {
@@ -49,106 +52,111 @@
     }
   }
 
-  &__contentRight {
-    height: 500px;
+  &__contentLeft {
+    margin: 0;
+  }
+}
 
-    &-listProduct{
-      position: relative;
-      width: 485px;
-      margin-left: ($gutter * 2 );
-    }
+@media (min-width: 841px) {
+  .bannerFull {
+    &__contentRight {
+      display: block;
+      height: 500px;
 
-    &-listProductItem {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 209px;
-      border-radius: 8px;
-      border: 1px solid #f2f2f2;
-      background: #fff;
-      box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
-      padding: $gutter 0;
-
-      &:nth-of-type(1){
-        position: absolute;
-        left: 0;
-        top: 120px;
+      &-listProduct {
+        position: relative;
+        width: 320px;
+        margin-left: ($gutter * 2);
       }
 
-      &:nth-of-type(2){
-        position: absolute;
-        left: calc(50% - 110px);
-        top: -36px;
-        z-index: 2;
+      &-listProductItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 135px;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        background: #fff;
+        box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
+        padding: $gutter 0;
+
+        &:nth-of-type(1) {
+          position: absolute;
+          left: 0;
+          top: 120px;
+        }
+
+        &:nth-of-type(2) {
+          position: absolute;
+          left: calc(50% - 77px);
+          top: -36px;
+          z-index: 2;
+        }
+
+        &:nth-of-type(3) {
+          position: absolute;
+          right: 14px;
+          top: 150px;
+          z-index: 1;
+        }
       }
 
-      &:nth-of-type(3){
-        position: absolute;
-        right: 14px;
-        top: 170px;
-        z-index: 1;
+      &-listProducLink {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
-    }
 
-    &-listProducLink{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+      &-listProducImg {
+        width: 120px;
+        height: 150px;
+      }
 
-    &-listProducButton {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px ($gutter * 1.5);
-      margin-top: ($gutter / 2);
-      gap: 10px;
-      border-radius: 24px;
-      border: 1px solid $pink-jussi;
-      background-color: #fff;
-      font-size: 16px;
-      font-weight: 500;
-      color: $pink-jussi;
+      &-listProducButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: $pink-jussi;
+        padding: ($gutter / 2);
+        margin-top: ($gutter / 2);
+        border-radius: 24px;
+        border: 1px solid $pink-jussi;
+        background-color: #fff;
+      }
     }
   }
 }
 
-@media (max-width: 1110px) {
-  .bannerFull{
-    &__contentRight{
-      &-listProduct{
-        width: 320px;
+@media (min-width: 1111px) {
+  .bannerFull {
+    &__contentRight {
+      &-listProduct {
+        width: 485px;
       }
 
-      &-listProductItem{
-        width: 135px;
+      &-listProductItem {
+        width: 209px;
 
-        &:nth-of-type(1){
+        &:nth-of-type(1) {
           top: 120px;
         }
 
-        &:nth-of-type(2){
-          left: calc(50% - 77px);
+        &:nth-of-type(2) {
+          left: calc(50% - 110px);
         }
 
         &:nth-of-type(3) {
-          top: 150px;
+          top: 170px;
         }
       }
 
-      &-listProducImg{
-        width: 120px;
+      &-listProducButton {
+        padding: 12px ($gutter * 1.5);
+        font-size: 16px;
       }
-
-      &-listProducButton{
-        font-size: 12px;
-        padding: ($gutter / 2);
-      }
-    }
-
-    &__contentLeft {
-      margin: 0;
     }
   }
 }
@@ -156,9 +164,9 @@
 @media (max-width: 840px) {
   .bannerFull .containerCenter {
     padding: ($gutter * 2) ($gutter * 2);
-  } 
+  }
 
-  .bannerFull__contentRight{
+  .bannerFull__contentRight {
     display: none;
   }
 }
