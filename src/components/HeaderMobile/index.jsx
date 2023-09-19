@@ -11,6 +11,12 @@ const HeaderMobile = () => {
     window.location.href = `/s?q=${term}`;
   }
 
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handleSearch()
+    }
+  }
+
   return (
     <>
       <header className="containerFull headerMobile">
@@ -31,6 +37,7 @@ const HeaderMobile = () => {
             className="searchMobile__searchInput"
             placeholder="Buscar"
             onKeyUp={((event) => setTerm(event?.target?.value))}
+            onKeyPress={handleKeyPress}
           />
           <button className="searchMobile__searchBtn" onClick={handleSearch}>
             <img
